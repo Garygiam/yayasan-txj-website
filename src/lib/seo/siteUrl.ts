@@ -1,9 +1,9 @@
-const LOCALHOST_FALLBACK = 'http://localhost:3000'
+const PRODUCTION_FALLBACK = 'https://www.yayasantxj.org'
 
 export function getSiteUrl() {
   const configured = process.env.NEXT_PUBLIC_SITE_URL?.trim()
 
-  if (!configured) return LOCALHOST_FALLBACK
+  if (!configured) return PRODUCTION_FALLBACK
 
   return configured.endsWith('/') ? configured.slice(0, -1) : configured
 }
