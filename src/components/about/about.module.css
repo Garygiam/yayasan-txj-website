@@ -1,0 +1,344 @@
+.pageShell {
+  padding: 48px 16px 72px;
+}
+
+.pageFlow {
+  display: grid;
+  gap: 32px;
+  max-width: 1120px;
+  margin: 40px auto 0;
+}
+
+.leadershipChapter {
+  display: grid;
+  gap: 32px;
+}
+
+.heroCard,
+.storyCard,
+.sectionCard,
+.supportingCard,
+.founderCard {
+  display: grid;
+  gap: 18px;
+  padding: 28px;
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255, 250, 242, 0.98), rgba(246, 237, 221, 0.9));
+  box-shadow: 0 14px 36px rgba(23, 23, 23, 0.06);
+}
+
+.heroCard {
+  gap: 20px;
+  background:
+    radial-gradient(circle at top right, rgba(241, 200, 106, 0.2), transparent 34%),
+    linear-gradient(135deg, #fff7ea, #f2e0bd);
+}
+
+.storyCard,
+.founderCard {
+  padding: 32px;
+}
+
+.storyCard p,
+.sectionCard p,
+.supportingCard p,
+.founderCard p,
+.metaItem p,
+.statCard p {
+  margin: 0;
+}
+
+.heroCard h1,
+.storyCard h2,
+.sectionCard h2,
+.supportingCard h2,
+.founderCard h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  line-height: 1.05;
+  color: #20160d;
+}
+
+.supportingGrid,
+.storyGroup,
+.metaGrid,
+.detailGrid,
+.statGrid {
+  display: grid;
+  gap: 18px;
+}
+
+.supportingGrid,
+.storyGroup,
+.metaGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.metaItem {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+  border: 1px solid rgba(23, 23, 23, 0.06);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.52);
+}
+
+.metaLabel {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8b5d12;
+}
+
+.sectionLabel {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8b5d12;
+}
+
+.featuredSection {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+  gap: 24px;
+  padding: 32px;
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at top right, rgba(241, 200, 106, 0.16), transparent 34%),
+    linear-gradient(135deg, #fffaf1, #f7eddb);
+  box-shadow: 0 16px 40px rgba(23, 23, 23, 0.06);
+}
+
+.featuredLink,
+.cardLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.featuredPhoto,
+.cardPhoto {
+  overflow: hidden;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(241, 200, 106, 0.24), rgba(86, 74, 63, 0.12));
+  min-height: 240px;
+  aspect-ratio: 4 / 5;
+}
+
+.featuredPhoto {
+  min-height: 320px;
+  aspect-ratio: 4 / 5;
+}
+
+.featuredImage,
+.cardImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featuredBody,
+.cardBody,
+.sectionBlock {
+  display: grid;
+  gap: 12px;
+}
+
+.featuredBody {
+  align-content: center;
+}
+
+.featuredBody h2,
+.sectionBlock h2 {
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  line-height: 1.05;
+  color: #20160d;
+}
+
+.featuredTitle,
+.cardTitle {
+  font-weight: 700;
+  color: #8b5d12;
+}
+
+.featuredBody p,
+.cardBody p,
+.sectionBlock p {
+  line-height: 1.7;
+  color: #564a3f;
+}
+
+.sectionBlock {
+  gap: 20px;
+}
+
+.detailGrid,
+.statGrid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.detailCard,
+.statCard {
+  display: grid;
+  gap: 12px;
+  padding: 22px;
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255, 250, 242, 0.98), rgba(246, 237, 221, 0.9));
+  box-shadow: 0 12px 32px rgba(23, 23, 23, 0.06);
+}
+
+.detailCard h3 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: #24180f;
+}
+
+.detailCard p,
+.statCard p {
+  margin: 0;
+  line-height: 1.7;
+  color: #564a3f;
+}
+
+.detailList {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #564a3f;
+  line-height: 1.7;
+}
+
+.quote {
+  margin: 4px 0;
+  padding: 22px 26px;
+  border-left: 4px solid rgba(139, 93, 18, 0.6);
+  border-radius: 0 22px 22px 0;
+  background: rgba(241, 200, 106, 0.12);
+  color: #24180f;
+  font-size: 1.12rem;
+  line-height: 1.65;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  display: grid;
+  gap: 16px;
+  padding: 24px;
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255, 250, 242, 0.98), rgba(246, 237, 221, 0.9));
+  box-shadow: 0 12px 32px rgba(23, 23, 23, 0.06);
+}
+
+.backLink {
+  width: fit-content;
+  color: #8b5d12;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.profileHero {
+  display: grid;
+  grid-template-columns: minmax(240px, 360px) minmax(0, 1fr);
+  gap: 24px;
+  padding: 32px;
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at top right, rgba(241, 200, 106, 0.16), transparent 34%),
+    linear-gradient(135deg, #fffaf1, #f7eddb);
+  box-shadow: 0 16px 40px rgba(23, 23, 23, 0.06);
+}
+
+.profilePhoto {
+  overflow: hidden;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(241, 200, 106, 0.24), rgba(86, 74, 63, 0.12));
+  aspect-ratio: 4 / 5;
+  min-height: 320px;
+}
+
+.profileBody {
+  display: grid;
+  gap: 12px;
+  align-content: center;
+}
+
+.profileBody h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  line-height: 1.05;
+  color: #20160d;
+}
+
+.profileMeta {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8b5d12;
+}
+
+.cardBody h3 {
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: #24180f;
+}
+
+@media (max-width: 800px) {
+  .pageShell {
+    padding: 32px 14px 56px;
+  }
+
+  .pageFlow {
+    gap: 24px;
+    margin-top: 28px;
+  }
+
+  .leadershipChapter {
+    gap: 24px;
+  }
+
+  .heroCard,
+  .storyCard,
+  .sectionCard,
+  .supportingCard,
+  .founderCard,
+  .featuredSection {
+    padding: 22px;
+  }
+
+  .supportingGrid,
+  .storyGroup,
+  .metaGrid,
+  .detailGrid,
+  .statGrid,
+  .grid,
+  .featuredSection {
+    grid-template-columns: 1fr;
+  }
+
+  .featuredPhoto {
+    min-height: 260px;
+  }
+
+  .profileHero {
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+
+  .profilePhoto {
+    min-height: 260px;
+  }
+}

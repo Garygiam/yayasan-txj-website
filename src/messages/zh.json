@@ -1,0 +1,41 @@
+{
+  "site": {
+    "brand": "TXJ Care",
+    "tagline": "连结关怀，传递温暖"
+  },
+  "nav": {
+    "about": "关于我们",
+    "programs": "项目",
+    "impact": "影响力",
+    "media": "媒体报道",
+    "getInvolved": "参与方式",
+    "donate": "捐助",
+    "contact": "联系"
+  },
+  "home": {
+    "heroTitle": "以实际行动连结关怀与支持",
+    "heroBody": "由青年推动的公益行动，为马来西亚各地提供即时、可持续的援助——从城市街头到偏远乡村。",
+    "latestUpdates": "最新动态",
+    "readMore": "阅读更多",
+    "learnMore": "了解更多",
+    "howHelpWorks": "援助如何送达",
+    "founderSpotlight": "创办人聚焦",
+    "fourPillars": "四大支柱"
+  },
+  "common": {
+    "officialName": "法定名称",
+    "founder": "创办人",
+    "coverage": "报道",
+    "pressCoverage": "媒体报道",
+    "linkAvailableSoon": "链接即将补上",
+    "details": "详情",
+    "message": "留言",
+    "privacy": "隐私",
+    "featuredPath": "重点参与方式",
+    "whyVolunteer": "为什么参与志愿服务",
+    "partnership": "合作",
+    "donate": "捐助",
+    "trust": "信任",
+    "reassurance": "说明"
+  }
+}

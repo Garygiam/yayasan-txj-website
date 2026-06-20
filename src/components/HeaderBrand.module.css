@@ -1,0 +1,44 @@
+.brandLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+  max-height: 52px;
+  object-fit: contain;
+}
+
+.tagline {
+  max-width: 10ch;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+.fallbackBrand {
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 720px) {
+  .brandLink {
+    gap: 10px;
+    min-height: 40px;
+  }
+
+  .logo {
+    max-height: 38px;
+  }
+
+  .tagline {
+    max-width: 9ch;
+    font-size: 0.88rem;
+  }
+}

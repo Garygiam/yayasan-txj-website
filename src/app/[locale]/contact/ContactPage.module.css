@@ -1,0 +1,88 @@
+.pageShell {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0 72px;
+}
+
+.pageFlow {
+  display: grid;
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.heroCard,
+.sectionCard,
+.helperBand {
+  padding: 32px;
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255, 250, 242, 0.98), rgba(246, 237, 221, 0.9));
+  box-shadow: 0 16px 40px rgba(23, 23, 23, 0.06);
+}
+
+.heroCard {
+  display: grid;
+  gap: 18px;
+}
+
+.sectionLabel {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.heroLead {
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 700;
+  color: #24180f;
+}
+
+.heroBody,
+.sectionBody,
+.infoList,
+.helperBand p {
+  line-height: 1.75;
+  color: #564a3f;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr);
+  gap: 18px;
+}
+
+.infoCard,
+.formCard {
+  display: grid;
+  gap: 16px;
+  padding: 24px;
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  border-radius: 24px;
+  background: #fffdfa;
+  box-shadow: 0 12px 30px rgba(23, 23, 23, 0.05);
+}
+
+.infoList {
+  margin: 0;
+  padding-left: 18px;
+}
+
+@media (max-width: 900px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .pageShell {
+    width: min(1120px, calc(100% - 24px));
+    padding: 32px 0 56px;
+  }
+
+  .heroCard,
+  .sectionCard,
+  .helperBand {
+    padding: 24px;
+  }
+}

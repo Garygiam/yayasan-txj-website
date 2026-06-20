@@ -1,0 +1,41 @@
+{
+  "site": {
+    "brand": "TXJ Care",
+    "tagline": "Prihatin Yang Menghubungkan"
+  },
+  "nav": {
+    "about": "Mengenai Kami",
+    "programs": "Program",
+    "impact": "Impak",
+    "media": "Media",
+    "getInvolved": "Sertai Kami",
+    "donate": "Derma",
+    "contact": "Hubungi"
+  },
+  "home": {
+    "heroTitle": "Prihatin yang menghubungkan kepada bantuan praktikal",
+    "heroBody": "Gerakan dipacu belia yang memberi bantuan segera dan lestari di seluruh Malaysia—dari jalanan bandar hingga ke kampung pedalaman.",
+    "latestUpdates": "Kemas Kini Terkini",
+    "readMore": "Baca lanjut",
+    "learnMore": "Ketahui lanjut",
+    "howHelpWorks": "Bagaimana Bantuan Disalurkan",
+    "founderSpotlight": "Sorotan Pengasas",
+    "fourPillars": "Empat Teras"
+  },
+  "common": {
+    "officialName": "Nama Rasmi",
+    "founder": "Pengasas",
+    "coverage": "Liputan",
+    "pressCoverage": "Liputan akhbar",
+    "linkAvailableSoon": "Pautan akan tersedia tidak lama lagi",
+    "details": "Butiran",
+    "message": "Mesej",
+    "privacy": "Privasi",
+    "featuredPath": "Laluan utama",
+    "whyVolunteer": "Mengapa menjadi sukarelawan",
+    "partnership": "Kerjasama",
+    "donate": "Derma",
+    "trust": "Kepercayaan",
+    "reassurance": "Jaminan"
+  }
+}

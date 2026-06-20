@@ -1,0 +1,288 @@
+.pageShell {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0 72px;
+}
+
+.pageFlow {
+  display: grid;
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.heroCard,
+.sectionCard,
+.helperBand {
+  padding: 32px;
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255, 250, 242, 0.98), rgba(246, 237, 221, 0.9));
+  box-shadow: 0 16px 40px rgba(23, 23, 23, 0.06);
+}
+
+.heroCard {
+  display: grid;
+  gap: 18px;
+}
+
+.sectionLabel {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.heroLead {
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 700;
+  color: #24180f;
+}
+
+.heroBody,
+.sectionBody,
+.supportList,
+.helperBand p {
+  line-height: 1.75;
+  color: #564a3f;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: 18px;
+}
+
+.donationCard,
+.supportCard {
+  display: grid;
+  gap: 16px;
+  padding: 24px;
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  border-radius: 24px;
+  background: #fffdfa;
+  box-shadow: 0 12px 30px rgba(23, 23, 23, 0.05);
+}
+
+.supportList {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.amountGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.amountButton,
+.amountButtonActive {
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid rgba(23, 23, 23, 0.1);
+  border-radius: 16px;
+  background: rgba(255, 252, 246, 0.92);
+  color: #20160d;
+  font-weight: 700;
+  transition:
+    background 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.amountButton:hover,
+.amountButtonActive:hover {
+  transform: translateY(-1px);
+}
+
+.amountButtonActive {
+  background: linear-gradient(135deg, #f1c86a, #c79c3b);
+  box-shadow: 0 10px 24px rgba(139, 93, 18, 0.14);
+}
+
+.actionRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 12px;
+}
+
+.secondaryAction {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 18px;
+  border: 1px solid rgba(23, 23, 23, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 252, 246, 0.92);
+  color: #20160d;
+  font-weight: 700;
+  transition:
+    background 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.secondaryAction:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(23, 23, 23, 0.08);
+}
+
+.secondaryAction:disabled {
+  opacity: 0.7;
+}
+
+.manualPaymentPanel {
+  display: grid;
+  gap: 18px;
+  padding: 22px;
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255, 250, 242, 0.96), rgba(248, 242, 231, 0.92));
+}
+
+.manualPaymentHeader {
+  display: grid;
+  gap: 8px;
+}
+
+.panelEyebrow {
+  margin: 0;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #7a5a1e;
+}
+
+.panelBody,
+.cardNote,
+.bankDetails dd {
+  margin: 0;
+  line-height: 1.65;
+  color: #564a3f;
+}
+
+.amountSummary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(23, 23, 23, 0.08);
+}
+
+.amountLabel {
+  font-size: 0.9rem;
+  color: #6a5b4e;
+}
+
+.amountValue {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  color: #20160d;
+}
+
+.manualPaymentGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr);
+  gap: 16px;
+}
+
+.manualPaymentCard {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  background: #fffdfa;
+}
+
+.bankDetails {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+}
+
+.bankDetails dt {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7a5a1e;
+}
+
+.qrSlotGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.qrCard {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.qrImage {
+  width: min(100%, 240px);
+  height: auto;
+  border-radius: 18px;
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  background: white;
+}
+
+.whatsAppButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: #1f8f4e;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .manualPaymentGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .pageShell {
+    width: min(1120px, calc(100% - 24px));
+    padding: 32px 0 56px;
+  }
+
+  .heroCard,
+  .sectionCard,
+  .helperBand {
+    padding: 24px;
+  }
+
+  .amountGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .actionRow,
+  .qrSlotGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .amountSummary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .whatsAppButton {
+    width: 100%;
+  }
+}

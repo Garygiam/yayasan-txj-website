@@ -1,0 +1,308 @@
+.pageShell {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0 72px;
+}
+
+.pageFlow {
+  display: grid;
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.heroCard,
+.gallerySection,
+.storiesSection,
+.donateBand {
+  padding: 32px;
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  border-radius: 28px;
+  box-shadow: 0 16px 40px rgba(23, 23, 23, 0.06);
+}
+
+.heroCard {
+  display: grid;
+  gap: 24px;
+  background:
+    radial-gradient(circle at top right, rgba(241, 200, 106, 0.22), transparent 30%),
+    linear-gradient(135deg, rgba(24, 17, 11, 0.92), rgba(92, 57, 24, 0.78));
+  color: #fffaf2;
+}
+
+.heroLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.92fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.heroContent {
+  display: grid;
+  gap: 18px;
+  align-content: start;
+}
+
+.heroMedia {
+  min-height: 100%;
+}
+
+.sectionLabel {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.heroCard h1,
+.gallerySection h2,
+.storiesSection h2,
+.donateBand h2,
+.storyCard h3,
+.galleryCaption strong {
+  color: #20160d;
+  line-height: 1.05;
+}
+
+.heroCard h1 {
+  color: #fffaf2;
+  font-size: clamp(2.6rem, 4.8vw, 4.25rem);
+}
+
+.gallerySection h2,
+.storiesSection h2,
+.donateBand h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.storyCard h3 {
+  font-size: 1.35rem;
+}
+
+.heroLead {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 700;
+  color: #fff6e7;
+}
+
+.heroBody,
+.sectionBody,
+.storyCard p,
+.galleryCaption {
+  line-height: 1.75;
+}
+
+.heroBody {
+  max-width: 58ch;
+  color: rgba(255, 250, 242, 0.9);
+}
+
+.sectionBody,
+.storyCard p,
+.galleryCaption {
+  color: #564a3f;
+}
+
+.heroStats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.heroStats li {
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 250, 242, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 250, 242, 0.12);
+}
+
+.heroCta,
+.donateLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.heroCta {
+  justify-self: start;
+  background: rgba(255, 250, 242, 0.12);
+  border: 1px solid rgba(255, 250, 242, 0.24);
+  color: #fffaf2;
+}
+
+.heroCta:hover {
+  background: rgba(255, 250, 242, 0.18);
+}
+
+.heroImageWrap,
+.heroImageFallback {
+  overflow: hidden;
+  border-radius: 24px;
+  aspect-ratio: 16 / 11;
+}
+
+.heroImageWrap {
+  position: relative;
+  min-height: 100%;
+  background: rgba(255, 252, 246, 0.08);
+}
+
+.heroImageFallback {
+  display: grid;
+  gap: 14px;
+  align-content: end;
+  padding: 24px;
+  background:
+    linear-gradient(180deg, rgba(255, 250, 242, 0.04), rgba(255, 250, 242, 0.18)),
+    rgba(255, 250, 242, 0.08);
+  border: 1px solid rgba(255, 250, 242, 0.16);
+}
+
+.heroImageFallback strong,
+.heroImageFallback p {
+  color: #fffaf2;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallerySection,
+.storiesSection {
+  display: grid;
+  gap: 18px;
+  background: linear-gradient(180deg, rgba(255, 250, 242, 0.98), rgba(246, 237, 221, 0.9));
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+}
+
+.galleryTile {
+  overflow: hidden;
+  border-radius: 22px;
+  min-height: 220px;
+  background: rgba(255, 252, 246, 0.92);
+  border: 1px solid rgba(23, 23, 23, 0.06);
+  box-shadow: 0 12px 30px rgba(23, 23, 23, 0.05);
+}
+
+.galleryImageWrap,
+.galleryPlaceholder {
+  min-height: 160px;
+}
+
+.galleryImageWrap {
+  position: relative;
+}
+
+.galleryPlaceholder {
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background:
+    linear-gradient(135deg, rgba(241, 200, 106, 0.2), rgba(255, 250, 242, 0.82)),
+    #fffdfa;
+  color: #7a6653;
+  text-align: center;
+}
+
+.galleryImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.galleryCaption {
+  display: grid;
+  gap: 4px;
+  padding: 16px 18px 18px;
+}
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.storyCard {
+  display: grid;
+  gap: 12px;
+  padding: 22px;
+  border-radius: 24px;
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  background: #fffdfa;
+  box-shadow: 0 12px 30px rgba(23, 23, 23, 0.05);
+}
+
+.storyCardImageWrap {
+  overflow: hidden;
+  border-radius: 18px;
+  aspect-ratio: 16 / 10;
+}
+
+.storyCardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.donateBand {
+  display: grid;
+  gap: 14px;
+  justify-items: start;
+  background:
+    linear-gradient(135deg, rgba(241, 200, 106, 0.22), rgba(255, 250, 242, 0.98)),
+    #fffdfa;
+}
+
+.donateLink {
+  background: linear-gradient(135deg, #f1c86a, #c79c3b);
+  color: #20160d;
+  box-shadow: 0 10px 24px rgba(139, 93, 18, 0.16);
+}
+
+.donateLink:hover {
+  background: linear-gradient(135deg, #e9be58, #b88e33);
+}
+
+@media (max-width: 900px) {
+  .heroLayout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .pageShell {
+    width: min(1120px, calc(100% - 24px));
+    padding: 32px 0 56px;
+  }
+
+  .heroCard,
+  .gallerySection,
+  .storiesSection,
+  .donateBand {
+    padding: 24px;
+  }
+
+  .heroStats {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .heroCta,
+  .donateLink {
+    width: 100%;
+  }
+}

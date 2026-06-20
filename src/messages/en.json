@@ -1,0 +1,41 @@
+{
+  "site": {
+    "brand": "TXJ Care",
+    "tagline": "Care That Connects"
+  },
+  "nav": {
+    "about": "About",
+    "programs": "Programs",
+    "impact": "Impact",
+    "media": "Media",
+    "getInvolved": "Get involved",
+    "donate": "Donate",
+    "contact": "Contact"
+  },
+  "home": {
+    "heroTitle": "Care that connects people to practical support",
+    "heroBody": "A youth-driven movement providing immediate, sustainable help across Malaysia—from urban streets to remote villages.",
+    "latestUpdates": "Latest Updates",
+    "readMore": "Read more",
+    "learnMore": "Learn More",
+    "howHelpWorks": "How Help Works",
+    "founderSpotlight": "Founder Spotlight",
+    "fourPillars": "Four Pillars"
+  },
+  "common": {
+    "officialName": "Official Name",
+    "founder": "Founder",
+    "coverage": "Coverage",
+    "pressCoverage": "Press coverage",
+    "linkAvailableSoon": "Link available soon",
+    "details": "Details",
+    "message": "Message",
+    "privacy": "Privacy",
+    "featuredPath": "Featured path",
+    "whyVolunteer": "Why volunteer",
+    "partnership": "Partnership",
+    "donate": "Donate",
+    "trust": "Trust",
+    "reassurance": "Reassurance"
+  }
+}

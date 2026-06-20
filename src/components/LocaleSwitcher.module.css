@@ -1,0 +1,43 @@
+.root {
+  position: relative;
+}
+
+.trigger {
+  min-height: 46px;
+  padding: 0 16px;
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 250, 242, 0.92);
+  color: var(--text-strong);
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(23, 23, 23, 0.04);
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  min-width: 190px;
+  padding: 8px;
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255, 250, 242, 0.98), rgba(247, 239, 224, 0.96));
+  box-shadow: 0 16px 30px rgba(23, 23, 23, 0.08);
+  display: grid;
+  gap: 4px;
+  z-index: 10;
+}
+
+.option {
+  padding: 10px 12px;
+  border-radius: 12px;
+  color: var(--text-strong);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.optionCurrent {
+  background: rgba(199, 164, 74, 0.14);
+  font-weight: 700;
+}

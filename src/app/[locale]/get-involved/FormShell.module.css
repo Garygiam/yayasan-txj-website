@@ -1,0 +1,88 @@
+.form {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.label {
+  font-weight: 700;
+  color: #2d2118;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(23, 23, 23, 0.12);
+  border-radius: 14px;
+  background: rgba(255, 252, 246, 0.95);
+  color: #20160d;
+}
+
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.fieldset {
+  display: grid;
+  gap: 10px;
+  padding: 14px 16px 16px;
+  border: 1px solid rgba(23, 23, 23, 0.1);
+  border-radius: 18px;
+  background: rgba(255, 250, 242, 0.7);
+}
+
+.legend {
+  font-weight: 700;
+  color: #2d2118;
+}
+
+.checkboxList {
+  display: grid;
+  gap: 10px;
+}
+
+.checkboxRow {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  color: #564a3f;
+}
+
+.captchaNote,
+.privacyNote,
+.statusMessage {
+  color: #564a3f;
+  line-height: 1.6;
+}
+
+.submitButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 18px;
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f1c86a, #c79c3b);
+  color: #20160d;
+  font-weight: 700;
+}
+
+.submitButton:disabled {
+  opacity: 0.7;
+}
+
+.statusSuccess {
+  color: #285c37;
+}
+
+.statusError {
+  color: #8a2f2f;
+}
